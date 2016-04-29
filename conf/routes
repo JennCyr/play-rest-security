@@ -3,16 +3,6 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Assets.at(path="/public", file="index.html")
-
-POST    /login                      controllers.SecurityController.login()
-POST    /logout                     controllers.SecurityController.logout()
-
-GET     /todos                      controllers.TodoController.getAllTodos()
-POST    /todos                      controllers.TodoController.createTodo()
-
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-
 GET / controllers.Assets.at(path="/public", file="index.html")
 
 GET /api-docs controllers.ApiHelpController.getResources

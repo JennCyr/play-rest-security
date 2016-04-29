@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import static play.libs.Json.toJson;
 
 @Security.Authenticated(Secured.class)
+@Api(value = "/api/todos", description = "Operations with Todos") @Security.Authenticated(Secured.class) 
 public class TodoController extends Controller {
 
     @Inject FormFactory formFactory;
